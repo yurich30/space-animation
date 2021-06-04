@@ -1,0 +1,217 @@
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/space.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__inner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__btn{
+    background-color: #000;
+    color: #ffff00;
+    outline: inherit;
+    border: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    padding: 5px 40px;
+    position: absolute;
+    left: -50px;
+}
+.main__btn:active{
+    border: 1px solid #ffff00;
+}
+.main__text{
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: bold;
+    color: #fff;
+    display: none;
+}
+.main__img{
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    display: none;
+    opacity: 10;
+    position: absolute;
+    left: 0;
+}
+.footer{
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    overflow: hidden;
+}
+.footer__image{
+    position: absolute;
+    left:0;
+    transform: translate(-50%);
+    width: 100%;
+}
+
+.hidden{
+    display: none;
+}
+
+.animate-earth {
+    animation-name: earth;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.animate-text{
+    animation-name: text;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    display: block;
+}
+
+.animate-astronaut{
+    animation-name: astronaut;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    display: block;
+}
+
+@keyframes earth {
+    0%{
+        transform: rotate(0deg)
+    }
+    10%{
+        transform: rotate(36deg)
+    }
+    20%{
+        transform: rotate(72deg)
+    }
+    30%{
+        transform: rotate(108deg)
+    }
+    40%{
+        transform: rotate(144deg)
+    }
+    50%{
+        transform: rotate(180deg)
+    }
+    60%{
+        transform: rotate(216deg)
+    }
+    70%{
+        transform: rotate(252deg)
+    }
+    80%{
+        transform: rotate(288deg)
+    }
+    90%{
+        transform: rotate(324deg)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes text{
+    0%{
+        font-size: 24px;
+        line-height: 40px; 
+    }
+    100%{
+        font-size: 300px;
+        line-height: 320px;
+    }
+}
+
+@keyframes astronaut {
+    0%{
+        width: 25px;
+        height: 25px;
+        right: 0;
+    }
+    10%{
+        width: 200px;
+        height: 200px;
+        left: 200px;
+    }
+    20%{
+        width: 150px;
+        height: 150px;
+        left: 200px;
+    }
+    30%{
+        width: 200px;
+        height: 200px;
+        left: 200px;
+    }
+    40%{
+        width: 150px;
+        height: 150px;
+        left: 200px;
+    }
+    50%{
+        width: 200px;
+        height: 200px;
+        left:200px;
+    }
+    58%{
+        width: 200px;
+        height: 200px;
+        left:200px;
+        top: -100px;
+    }
+    65%{
+        width: 200px;
+        height: 200px;
+        left:200px;
+        top: -120px;
+    }
+    72%{
+        width: 200px;
+        height: 200px;
+        left:200px;
+        top: -100px;
+    }
+    79%{
+        width: 200px;
+        height: 200px;
+        left:200px;
+        top: -120px;
+    }
+    86%{
+        width: 200px;
+        height: 200px;
+        left:200px;
+        top: -100px;
+    }
+    93%{
+        width: 200px;
+        height: 200px;
+        left:200px;
+        top: -120px;
+    }
+    100%{
+        width: 200px;
+        height: 200px;
+        left:200px;
+        top: -100px;
+    }
+
+}
